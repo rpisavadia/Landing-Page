@@ -10,7 +10,7 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Energy Healing Logo">
+            <img src="assets/update_logo.jpg" alt="Energy Healing Logo">
         </div>
         <nav>
             <ul>
@@ -45,21 +45,26 @@
             <div class="service-item">
                 <h3>Reiki Healing</h3>
                 <p>Channel universal energy to promote physical, mental, and emotional healing.</p>
+                <a href="#contact-form" class="book-now-button">Book Now</a>
             </div>
             <div class="service-item">
                 <h3>Crystal Healing</h3>
                 <p>Utilize the vibrational energy of crystals to align and balance your energy.</p>
+                <a href="#contact-form" class="book-now-button">Book Now</a>
             </div>
             <div class="service-item">
                 <h3>Chakra Balancing</h3>
                 <p>Clear and balance your chakras to improve your overall well-being and vitality.</p>
+                <a href="#contact-form" class="book-now-button">Book Now</a>
             </div>
             <div class="service-item">
                 <h3>Sound Therapy</h3>
                 <p>Harness the power of sound frequencies to bring calm and restoration.</p>
+                <a href="#contact-form" class="book-now-button">Book Now</a>
             </div>
         </div>
     </section>
+    
 
     <!-- Client Reviews Section -->
     <section id="reviews" class="reviews">
@@ -75,6 +80,36 @@
             </div>
         </div>
     </section>
+
+<!-- Contact Form Section -->
+<section id="contact-form" class="contact-form">
+    <h2>Contact Us to Book a Session</h2>
+    <form id="bookingForm" action="#" method="POST">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone (optional)</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="service">Select a Service *</label>
+        <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Reiki Healing">Reiki Healing</option>
+            <option value="Crystal Healing">Crystal Healing</option>
+            <option value="Chakra Balancing">Chakra Balancing</option>
+            <option value="Sound Therapy">Sound Therapy</option>
+        </select>
+
+        <label for="message">Additional Details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any additional details..."></textarea>
+
+        <button type="submit" class="submit-button">Submit</button>
+        <p id="thank-you-message" style="display: none;">Thank you for submitting. Someone will be in touch to take your booking.</p>
+    </form>
+</section>
 
     <!-- Footer Section -->
     <footer id="contact" class="footer">
