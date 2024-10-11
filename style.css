@@ -212,3 +212,59 @@ nav ul li a {
 .social-media a:hover {
     color: ##00C9A8;
 }
+
+/* For mobile devices with screens up to 600px wide */
+@media (max-width: 600px) {
+    /* Adjust the padding in the form and sections to avoid crowding */
+    .contact-form form,
+    .services-grid,
+    .reviews-grid {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 50px 20px; /* Reduce padding on mobile */
+        background-position: center; /* Ensure background image stays centered */
+    }
+
+    /* Reduce font size for smaller screens */
+    .contact-form h2, 
+    .about h2, 
+    .services h2, 
+    .reviews h2, 
+    .footer h2 {
+        font-size: 24px;
+    }
+
+    .cta-button, .book-now-button {
+        padding: 8px 15px; /* Smaller buttons for mobile */
+        font-size: 14px;
+    }
+
+    /* Align form elements vertically in a smaller format */
+    .contact-form form {
+        padding: 15px; /* Reduce padding */
+        max-width: 100%; /* Remove the width constraint on mobile */
+    }
+
+    /* Ensure the header content doesn't overlap or break */
+    header {
+        grid-template-columns: 1fr; /* Stack the logo and navigation */
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Adjust the services and reviews section on mobile */
+    .services-grid, .reviews-grid {
+        grid-template-columns: 1fr; /* Single-column layout on smaller screens */
+    }
+
+    .service-item, .review-item {
+        padding: 15px; /* Less padding on mobile */
+    }
+}
